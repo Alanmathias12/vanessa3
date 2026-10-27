@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Ilustração de duas pessoas sentadas lado a lado, compartilhando um narguilé à noite">
+<style>
+.s{fill:#FFE5EF;opacity:0;transform-box:fill-box;transform-origin:center;animation:up 7s ease-in infinite}
+.s2{animation-delay:2.3s}.s3{animation-delay:4.6s}
+@keyframes up{0%{opacity:0;transform:translate(0,0) scale(.6)}20%{opacity:.35}100%{opacity:0;transform:translate(10px,-150px) scale(2.2)}}
+.glow{animation:g 4s ease-in-out infinite}@keyframes g{50%{opacity:.7}}
+@media (prefers-reduced-motion:reduce){.s,.glow{animation:none}.s{opacity:.2}}
+</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#100D12"/><stop offset="1" stop-color="#2a1230"/></linearGradient>
+<radialGradient id="lamp" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffb37a" stop-opacity=".55"/><stop offset="1" stop-color="#ffb37a" stop-opacity="0"/></radialGradient>
+<filter id="b6"><feGaussianBlur stdDeviation="6"/></filter><filter id="b3"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<rect width="400" height="500" fill="url(#bg)"/>
+<g filter="url(#b6)" opacity=".8"><circle cx="60" cy="70" r="14" fill="#F1B6CB"/><circle cx="120" cy="110" r="9" fill="#ffb37a"/><circle cx="300" cy="60" r="16" fill="#8b4aa8"/><circle cx="350" cy="130" r="10" fill="#F1B6CB"/><circle cx="220" cy="85" r="8" fill="#ffd9a0"/></g>
+<circle class="glow" cx="200" cy="300" r="190" fill="url(#lamp)"/>
+<rect x="30" y="300" width="340" height="150" rx="30" fill="#3b1530"/>
+<!-- Alan -->
+<g>
+<rect x="78" y="268" width="98" height="150" rx="34" fill="#1d1a24"/>
+<rect x="64" y="290" width="26" height="100" rx="13" fill="#c08f6f"/>
+<rect x="164" y="290" width="26" height="90" rx="13" fill="#c08f6f"/>
+<g stroke="#2a1a14" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"><path d="M70 300q8 8 0 16t0 16"/><path d="M78 300q-6 14 0 28"/><path d="M172 305q8 10 0 20t0 20"/></g>
+<rect x="112" y="238" width="28" height="36" rx="12" fill="#c08f6f"/>
+<circle cx="126" cy="214" r="33" fill="#c9987a"/>
+<g fill="#2b1a14"><circle cx="100" cy="190" r="14"/><circle cx="118" cy="180" r="15"/><circle cx="138" cy="180" r="15"/><circle cx="154" cy="192" r="13"/><circle cx="96" cy="208" r="10"/><circle cx="156" cy="210" r="9"/><circle cx="126" cy="186" r="14"/></g>
+<path d="M114 222q5 4 10 0M130 222q5 4 10 0" stroke="#2a1a14" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M118 236q8 6 16 0" stroke="#7a3a30" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</g>
+<!-- Vanessa -->
+<g>
+<rect x="238" y="186" width="80" height="190" rx="40" fill="#0c0a0e"/>
+<rect x="232" y="274" width="98" height="144" rx="34" fill="#7a2a4a"/>
+<rect x="266" y="240" width="28" height="36" rx="12" fill="#f0d5c8"/>
+<circle cx="280" cy="216" r="31" fill="#f3dcd0"/>
+<path d="M248 218c0-30 14-40 34-40s34 10 34 40c-6-16-14-24-34-24s-28 8-34 24z" fill="#0c0a0e"/>
+<rect x="236" y="200" width="16" height="150" rx="8" fill="#0c0a0e"/><rect x="308" y="200" width="16" height="150" rx="8" fill="#0c0a0e"/>
+<path d="M268 222q5 4 10 0M284 222q5 4 10 0" stroke="#2a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M272 236q8 6 16 0" stroke="#b0455f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<rect x="226" y="296" width="24" height="86" rx="12" fill="#f0d5c8"/>
+</g>
+<!-- narguilé -->
+<g>
+<path d="M200 395c-26-4-30-34-14-52h28c16 18 12 48-14 52z" fill="#5A1937" stroke="#F1B6CB" stroke-opacity=".5"/>
+<rect x="196" y="262" width="8" height="82" fill="#b88a5a"/>
+<ellipse cx="200" cy="262" rx="24" ry="6" fill="#d9a86a"/>
+<path d="M186 262l4-24h20l4 24z" fill="#8a5a3a"/>
+<circle class="glow" cx="200" cy="240" r="7" fill="#ff7a3a" filter="url(#b3)"/>
+<path d="M192 330C170 340 160 335 146 322M208 330C230 340 240 330 252 318" stroke="#F1B6CB" stroke-opacity=".7" stroke-width="3" fill="none" stroke-linecap="round"/>
+</g>
+<rect x="30" y="418" width="340" height="16" rx="8" fill="#24152D"/>
+</svg>

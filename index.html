@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#100D12">
+<title>Pra Vanessa</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<canvas class="particles" id="particles" aria-hidden="true"></canvas>
+
+<!-- TELA INICIAL -->
+<main class="screen intro" id="intro">
+  <h1 class="script big">Vanessa, fiz uma coisinha pra você...</h1>
+  <p class="soft">Tem algumas coisas que a gente sente e nem sempre consegue explicar direito.</p>
+  <button class="cta" id="openBtn">ABRIR MEU PRESENTE ❤️</button>
+  <div class="heart-burst hidden" id="burst" aria-hidden="true">❤</div>
+</main>
+
+<main class="page hidden" id="page">
+
+  <!-- NOSSA HISTÓRIA -->
+  <section class="sec" id="historia">
+    <ol class="timeline">
+      <li><div class="reveal"><h2 class="script">Lá atrás</h2><p>A gente se conhece há bastante tempo. Já passamos por muita coisa, e sou muito grato por tudo que você me fez aprender nessa vida.</p></div></li>
+      <li><div class="reveal"><h2 class="script">O reencontro</h2><p>Nunca imaginei que, depois de tantos anos, a gente voltaria a se falar desse jeito. Isso me fez perceber como a vida é surpreendente.</p></div></li>
+      <li><div class="reveal"><h2 class="script">Agora</h2><p>E hoje eu fico orgulhoso de ver a mulher independente que você se tornou.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- ILUSTRAÇÃO (troque o arquivo img/ilustracao.svg quando quiser) -->
+  <section class="sec" id="ilustracao">
+    <div class="reveal">
+      <div class="art-wrap"><img class="art" src="img/ilustracao.svg" alt="Ilustração de nós dois sentados lado a lado, à noite, com um narguilé entre nós"><div class="smoke" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+      <p class="caption script">Às vezes, os momentos mais simples são os que ficam na memória.</p>
+    </div>
+  </section>
+
+  <!-- MÚSICA (arquivo: audio/nossa-musica.mp3) -->
+  <section class="sec center" id="musica">
+    <div class="reveal">
+      <p class="script mid">Tem uma música que sempre me faz lembrar de você...</p>
+      <button class="cta" id="musicBtn">OUVIR NOSSA MÚSICA 🎵</button>
+      <div class="player hidden" id="player">
+        <div class="disc" id="disc" aria-hidden="true"><span></span></div>
+        <div class="p-main">
+          <div class="p-title" id="pTitle">Nossa música</div>
+          <input type="range" id="seek" aria-label="Progresso" min="0" max="1" step="0.1" value="0">
+          <div class="p-time"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+        </div>
+        <button class="p-btn" id="playBtn" aria-label="Tocar"></button>
+        <label class="p-vol">Volume <input type="range" id="vol" aria-label="Volume" min="0" max="1" step="0.05" value="0.8"></label>
+        <p class="p-err hidden" id="err" role="alert">Não consegui carregar a música. Confira se o arquivo está em audio/nossa-musica.mp3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTÕES -->
+  <section class="sec" id="cartoes">
+    <div class="reveal"><h2 class="script mid center">Posso te contar mais uma coisa?</h2></div>
+    <div class="reveal"><div class="card rise"><button aria-expanded="false"><span>Uma coisa que admiro em você</span><span class="plus" aria-hidden="true">+</span></button><div class="msg"><p>Admiro a mulher independente que você se tornou. Seu jeito de seguir em frente, de ser dona do próprio caminho. Dá orgulho de ver, de verdade.</p></div></div></div>
+    <div class="reveal"><div class="card unfold"><button aria-expanded="false"><span>Uma coisa pela qual sou grato</span><span class="plus" aria-hidden="true">+</span></button><div class="msg"><p>Sou grato por tudo que a gente viveu e por tudo que aprendi com você. Algumas pessoas deixam marcas boas na gente, e você é uma delas.</p></div></div></div>
+    <div class="reveal"><div class="card blur"><button aria-expanded="false"><span>Uma coisa que a vida me mostrou</span><span class="plus" aria-hidden="true">+</span></button><div class="msg"><p>A vida surpreende. Duas pessoas que já se conheciam podem se reaproximar depois de tanto tempo, quando a gente menos espera. Achei isso bonito.</p></div></div></div>
+  </section>
+
+  <!-- CARTA -->
+  <section class="sec" id="carta">
+    <div class="reveal"><h2 class="script mid center">Algumas palavras pra você...</h2></div>
+    <div class="paper">
+      <div class="reveal"><p>Vanessa, às vezes eu paro pra pensar em como a vida é doida. A gente se conhece há tanto tempo, já passou por tanta coisa, e eu nunca imaginei que depois de todos esses anos a gente voltaria a se falar assim.</p></div>
+      <div class="reveal"><p>Sou muito grato por tudo que você já me ensinou, pelas coisas que vivi e por tudo que pude aprender com você.</p></div>
+      <div class="reveal"><p>Fico feliz e orgulhoso de ver a mulher independente que você se tornou. É muito bom poder conhecer um pouco mais de você nessa fase da vida.</p></div>
+      <div class="reveal"><p>Não sei explicar direito como algumas coisas acontecem, mas acho bonito perceber que a vida ainda consegue surpreender a gente.</p></div>
+      <div class="reveal"><p>Fiz esse cantinho como uma forma simples de demonstrar o carinho que tenho por você. Queria que você soubesse que sua presença tem um significado especial pra mim.</p></div>
+      <div class="reveal"><p>Espero que você goste. Fiz cada detalhe com carinho.</p></div>
+      <div class="reveal"><p class="script sign">Com carinho, Alan ❤️</p></div>
+    </div>
+  </section>
+
+  <!-- GALERIA (só aparece se houver fotos em js/app.js) -->
+  <section class="sec hidden" id="fotos">
+    <h2 class="script mid center">Lembranças</h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="sec center final" id="final">
+    <div class="reveal"><p class="script mid">Se você chegou até aqui, queria que soubesse de uma coisa...</p></div>
+    <div class="reveal"><p class="big-text">Sou grato por nossos caminhos terem se cruzado de novo. Obrigado por tudo que você me ensinou e por ser essa mulher que me dá orgulho de conhecer.</p></div>
+    <div class="reveal"><div class="beat" aria-hidden="true">❤</div></div>
+    <button class="cta" id="keepBtn">GUARDAR ESSE MOMENTO ❤️</button>
+    <div class="kept hidden" id="kept">
+      <p class="script mid">Fica guardado aqui, na memória. Obrigado por ter vindo até o fim.</p>
+      <button class="cta ghost" id="backBtn">Voltar ao início</button>
+    </div>
+    <p class="script sign">Feito com carinho, de Alan para Vanessa.</p>
+  </section>
+
+  <footer>Desenvolvido com muito carinho por Alan Mathias © 2026</footer>
+</main>
+
+<!-- Mini player fixo -->
+<div class="dock hidden" id="dock"><button id="dockBtn" aria-label="Tocar ou pausar música"><span class="disc sm" id="dockDisc"><span></span></span><span id="dockIcon"></span></button><i id="dockBar" style="width:0"></i></div>
+
+<div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true"><img id="lbImg" alt=""><button class="cta small" id="lbClose">Fechar</button></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+COMO ABRIR
+- Dê dois cliques em index.html (funciona direto no computador, sem instalar nada).
+- No celular: envie a pasta toda ou publique (veja abaixo).
+
+ONDE MEXER
+- Música: audio/nossa-musica.mp3
+- Ilustração: img/ilustracao.svg (se for PNG/JPG, troque o nome em index.html, na tag <img class="art">)
+- Fotos: coloque em photos/ e liste em js/app.js (lista PHOTOS, no topo)
+- Textos: direto no index.html
+- Cores e visual: css/styles.css
+
+PUBLICAR (Vercel)
+- Em vercel.com, "Add New > Project", e suba esta pasta (por GitHub ou arrastando). Não precisa de build.
